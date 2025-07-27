@@ -1,0 +1,160 @@
+/* Admin Dashboard Styling */
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Top Navbar */
+  .admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #3498db;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .admin-nav-links a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-nav-links a:hover {
+    color: #f1c40f;
+  }
+  
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-toggle:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Sidebar & Main Content Layout */
+  .admin-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .admin-sidebar {
+    width: 250px;
+    background: #2980b9;
+    color: white;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+  }
+  
+  .admin-sidebar.closed {
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+  }
+  
+  .admin-sidebar li {
+    margin: 0.5rem 0;
+  }
+  
+  .admin-sidebar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .admin-sidebar i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  /* Main Content */
+  .admin-main {
+    flex: 1;
+    padding: 2rem;
+    background: #ecf0f1;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-main h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .admin-main p {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+  }
+  
+  /* Stats Cards */
+  .admin-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    background: paleturquoise;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stat-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-card h3 {
+    color: #7f8c8d;
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .stat-card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+  }
