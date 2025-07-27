@@ -1,0 +1,126 @@
+/* Dean Dashboard Styling */
+.dean-dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Top Navbar */
+  .dean-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dean-navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .dean-nav-links a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .dean-nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  /* Sidebar & Main Content Layout */
+  .dean-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar */
+  .dean-sidebar {
+    width: 250px;
+    background: #34495e;
+    padding: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .dean-sidebar.closed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .dean-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dean-sidebar li {
+    margin: 1rem 0;
+  }
+  
+  .dean-sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  
+  .dean-sidebar a:hover {
+    background: #2c3e50;
+  }
+  
+  /* Main Content */
+  .dean-main {
+    flex: 1;
+    padding: 2rem;
+    background: #ecf0f1;
+    transition: all 0.3s ease;
+  }
+  
+  .dean-main h2 {
+    color: #2c3e50;
+  }
+  
+  /* Stats Cards */
+  .dean-stats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+  }
+  
+  .stat-card h3 {
+    color: #7f8c8d;
+    margin-top: 0;
+  }
+  
+  .stat-card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0.5rem 0 0;
+  }
